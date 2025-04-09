@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(95deg, #887de9, #fa3ec8) no-repeat bottom right;
+    background-image: url('https://cdn.pixabay.com/photo/2021/11/15/17/38/cat-6796139_1280.png');
+    background-size: 200px;
+  }
+  
+  .main {
+    max-width: 800px;
+    width: 100%;
+    background: #BEEBE9;
+    margin: 40px;
+    padding: 50px 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 120px;
+    height: 120px;
+    opacity: 0.1;
+    transform: rotate(-15deg);
+    background-size: cover;
+  }
+  
+  .main h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #3e1bc8;
+    margin-bottom: 40px;
+  }
+  
+  button {
+    padding: 14px 40px;
+    border: none;
+    outline: none;
+    background: #491cbc;
+    color: #f9f6f6;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background: #3a1498;
+    transform: scale(1.05);
+  }
+  
+  .result {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #1f1f1f;
+    max-width: 600px;
+    margin: 40px auto 0;
+    padding: 24px 32px;
+    background: #fff8f0;
+    border-left: 5px solid #ff6f61;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.4s ease-in-out;
+    position: relative;
+  }
+  
+  .result.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .result::before,
+  .result::after {
+    content: '"';
+    font-size: 2rem;
+    color: #ff6f61;
+    font-weight: bold;
+    position: absolute;
+  }
+  
+  .result::before {
+    top: 10px;
+    left: 20px;
+  }
+  
+  .result::after {
+    bottom: 10px;
+    right: 20px;
+  }
+  
+  .stairingcat {
+    height: 340px;
+    width: 340px;
+    padding: 70px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .overlay-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    z-index: 10;
+    pointer-events: none;
+  }
+  
