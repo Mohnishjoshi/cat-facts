@@ -14,6 +14,8 @@ body {
   background: linear-gradient(95deg, #887de9, #fa3ec8) no-repeat bottom right;
   background-image: url('https://cdn.pixabay.com/photo/2021/11/15/17/38/cat-6796139_1280.png');
   background-size: 200px;
+  padding: 20px; 
+  overflow-x: hidden;
 }
 
 /* ====== Main Container ====== */
@@ -114,7 +116,7 @@ button:hover {
   right: 30px;
 }
 
-/* ====== Decorative Cat Image (Unstyled Version) ====== */
+/* ====== Decorative Cat Image (Unstyled Version) ======
 .stairingcat {
   height: 340px;
   width: 340px;
@@ -147,4 +149,4 @@ button:hover {
   padding-left: 80px;
   transform: rotate(-10deg); /* playful tilt */
   opacity: 0.95;
-}
+} */
